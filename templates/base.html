@@ -30,29 +30,28 @@ style the page as you want it to appear. -->
 
 	<!-- {% set active_page = active_page|default('index') -%}
 	{{active_page}} -->
-	 <ul class="nav nav-pills">
+	 <div class="nav-bar">
 		<!-- {% for href, id, caption in nav %}
 	  	<li {% if id == active_page %} class="active" {% endif %}>
 			<a  href="{{ href|e }}">{{ caption|e }}</a></li>
 		{% endfor %} -->
-		<li class="
+		<a class="
 			{% if page == "" %}
 			   active
 			   {% endif %}
 			 {% if page == "Index" %}
 			   active
-			   {% endif %}
-		"><a href="/index.html">Home</a></li>
-		<li class="
+			   {% endif %}"
+			   href="/index.html">Home</a>
+		<a class="
 			{% if page == "Contact" %}
 			   active
-			   {% endif %}
-		"><a href="/contact.html">Contact</a></li>
-		<li class="{% if page == "Projects" %}
+			   {% endif %}" 
+			   href="/contact.html">Contact</a>
+		<a class="{% if page == "Projects" %}
 			   active
-			   {% endif %}
-
-		"><a href="/projects.html">Projects</a></li>
+			   {% endif %}"
+			   href="/projects.html">Projects</a>
 	</ul>
 </nav>
 </div>

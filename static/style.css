@@ -8,23 +8,29 @@ h1 {
 	font-size: 5em;
 	font-family: "century gothic", sans-serif;
 }
-.mynav {
-	text-align: center;
-	margin-bottom: 5%;
+
+
+a {
 	font: sans-serif;
-	font-size: 1.5em;
-	color: purple;
+	font-size: 1.2em;
+	color: #7F97AA;
 	text-decoration: none;
 	font-family: "arial";
+	padding: 1%;
+	border-radius: 4px;
+	display: inline-block;	
+	text-align: center;
 }
 
-.mynav li:hover {
+a:hover {
 	text-decoration: none;
-	background-color: #354348;
+	background-color: #7F97AA;
+	color: white;
 }
 
-li.active {
-	background-color: #354348;
+a.active {
+	background-color: #7F97AA;
+	color: white;
 }
 
 
