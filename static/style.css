@@ -1,4 +1,4 @@
-
+/*
 h1 {
 	margin-top: 5%;
 	margin-bottom: 3%;
@@ -7,10 +7,9 @@ h1 {
 	text-transform: capitalize;
 	font-size: 5em;
 	font-family: "century gothic", sans-serif;
-}
+}*/
 
-
-a {
+/*a {
 	font: sans-serif;
 	font-size: 1.2em;
 	color: #7F97AA;
@@ -18,17 +17,15 @@ a {
 	font-family: "arial";
 	padding: 1%;
 	border-radius: 4px;
-	display: inline-block;	
 	text-align: center;
 }
-
-a:hover {
+*/
+/*a:hover {
 	text-decoration: none;
-	background-color: #7F97AA;
-	color: white;
+	color: #7F97AA;
 }
 
-a.active {
+.active {
 	background-color: #7F97AA;
 	color: white;
 }
@@ -52,4 +49,4 @@ div img{
 
 footer {
 	text-align: center;
-}
+}*/
