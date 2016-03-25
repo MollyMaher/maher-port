@@ -1,17 +1,21 @@
-/*
+
 h1 {
 	margin-top: 5%;
+	padding-top: 5%;
 	margin-bottom: 3%;
 	text-align: center;
 	color: #F96400;
 	text-transform: capitalize;
 	font-size: 5em;
 	font-family: "century gothic", sans-serif;
-}*/
+}
 
-/*a {
+.myNav {
+	background-color: white;
+}
+
+/*.mynav a {
 	font: sans-serif;
-	font-size: 1.2em;
 	color: #7F97AA;
 	text-decoration: none;
 	font-family: "arial";
@@ -20,15 +24,7 @@ h1 {
 	text-align: center;
 }
 */
-/*a:hover {
-	text-decoration: none;
-	color: #7F97AA;
-}
 
-.active {
-	background-color: #7F97AA;
-	color: white;
-}
 
 
 div.aboutText {
@@ -49,4 +45,21 @@ div img{
 
 footer {
 	text-align: center;
-}*/
+}
+
+@media (max-width: 800px) {
+	h1 {
+		display: none;
+	}
+	.navbar-default .navName {
+	text-transform: uppercase;
+	color: #F96400;
+	font-family: "century gothic", sans-serif;
+	}
+}
+
+@media (min-width: 800px) {
+	.navbar-default .navName {
+		display: none;
+	}
+}
