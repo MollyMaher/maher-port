@@ -4,13 +4,16 @@ style the page as you want it to appear. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" rel="stylesheet">
+<script src="myScript.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" rel="stylesheet">
+
 <link rel="stylesheet" type="text/css" href="static/style.css"/>
 
 <title>Molly Maher | Health Informaticist</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
@@ -58,25 +61,32 @@ style the page as you want it to appear. -->
 
 		
 </div>
+<div id = "myBody">
+<div class = "myHeader"> 
+	<h1> Molly Maher </h1>	
+</div>
 
-<h1> Molly Maher </h1>		
+
+
 
 </header>
 
 
-
-{{page}}	
+<div id = "pageBody">
   
 {% block content %}
-	This is where content you want to see goes. No one wants to see what is here now.
+
+<p>	This is where content you want to see goes. No one wants to see what is here now.</p>
 	
 {% endblock %}
+</div> 
 
  <footer class="footer navbar-fixed-bottom">
       <div class="container">
         <p class="text-muted"> <span> Molly Maher | Ever curious, ever exploring. Contact mollymaher@gmail.com.</span> &copy; 2016 Molly Maher </p>
       </div>
     </footer>
+  </div>
   </body>
 </html>
 <!-- DO NOT CHANGE ANY PART OF THIS CODE!!! -->

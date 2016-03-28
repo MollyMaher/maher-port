@@ -1,29 +1,10 @@
 
-h1 {
-	margin-top: 5%;
-	padding-top: 5%;
-	margin-bottom: 3%;
-	text-align: center;
-	color: #F96400;
-	font-size: 5em;
-	font-family: "century gothic", sans-serif;
-	text-transform: uppercase;
-}
+/*base navigation
+*/
 
 .myNav {
 	background-color: white;
 }
-
-/*.mynav a {
-	font: sans-serif;
-	color: #7F97AA;
-	text-decoration: none;
-	font-family: "arial";
-	padding: 1%;
-	border-radius: 4px;
-	text-align: center;
-}
-*/
 
 .navbar-nav > li > a {
 	padding-top:5px !important; 
@@ -41,7 +22,7 @@ h1 {
 	text-transform: uppercase;
 }
 .navbar-default .navbar-nav>li>a:hover {
-	background-color: #F96400;
+	background-color: #7F97AA;
 	color: white;
 }
 
@@ -50,42 +31,111 @@ h1 {
 	color: white;
 }
 
+/*Other header stuff here
+*/
+
+.myHeader {
+	border-bottom: .1em solid #7F97AA;
+}
+
+
+h1 {
+	margin-top: 5%;
+	padding-top: 5%;
+	margin-bottom: 3%;
+	text-align: center;
+	color: #cde7de;
+	font-size: 5em;
+	font-family: "century gothic", sans-serif;
+	text-transform: uppercase;
+}
+
+.jumbotron {
+	margin-top: 4%;
+	background-image: url('/static/jumbo.jpg');
+	background-size: cover;
+}
+
+.jumbotron h1 {
+	color: #cde7de;
+	font-size: 5em;
+	font-family: "century gothic", sans-serif;
+	text-transform: uppercase;
+}
+
+.jumbotron p {
+	color: white;
+}
+
+/*Body and page-specific stuff here 
+*/
+
+body {
+	background-color: white;
+	margin: 1%;
+}
+h2 {
+	text-align: center;
+	color: #cde7de;
+	font-size: 3em;
+	font-family: "century gothic", sans-serif;
+	text-transform: uppercase;
+}
+
+#pageBody {
+	padding-top: 5%;
+}
+
+/*Data filtering stuff for project page
+*/
+/*[data-toggle='on'] {
+  display:block;
+}
+
+[data-toggle='off'] {
+  display:none;
+}*/
+
+/*Footer*/ 
 .footer {
+	padding-top: 1%;
 	text-align: center;
 	background-color:white;
 	background-image: url('/static/footer.png');
 }
 
-div.aboutText {
-	display: block;
-	border: solid 1px black;
-	padding: 10px;
-
-}
-
-body {
-	background-color: white;
-	margin-left: 20px;
-}
-
-
-
-@media (max-width: 800px) {
+/*Responisve media queries, etc.
+*/
+@media (max-width: 480px)  {
 	h1 {
 		display: none;
 	}
 	.navbar-default .navName {
 	text-transform: uppercase;
-	color: #F96400;
+	color: #7F97AA;
 	font-family: "century gothic", sans-serif;
 	}
 	.footer span {
 		display: none;
 	}
+	.jumbotron {
+		display: none;
+	}
 }
 
-@media (min-width: 800px) {
+@media (min-width: 481px) {
 	.navbar-default .navName {
 		display: none;
 	}
+	.myHeader {
+		display: none;
+	}
+}
+
+[data-toggle='on'] {
+  display:block;
+}
+
+[data-toggle='off'] {
+  display:none;
 }
