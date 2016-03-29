@@ -26,7 +26,14 @@ style the page as you want it to appear. -->
 <div class= "navbar navbar-default navbar-fixed-top myNav">
 		<div class="container">
 
-			<a href= "/index.html" class = "navbar-brand navName"> Molly Maher </a>
+			<a href= "/index.html" class = "navbar-brand navName
+				{% if page == "" %}
+			   				navBrandMain
+			   			{% endif %}
+						 {% if page == "Index" %}
+			  				 navBrandMain
+			  			 {% endif %}"> Molly Maher </a>
+
 				<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target="#navItems">
 				<span class="sr-only">Toggle Dropdown</span>
 				<span class = "icon-bar"></span>
@@ -61,7 +68,6 @@ style the page as you want it to appear. -->
 
 		
 </div>
-<div id = "myBody">
 <div class = "myHeader"> 
 	<h1> Molly Maher </h1>	
 </div>
@@ -83,7 +89,7 @@ style the page as you want it to appear. -->
 
  <footer class="footer navbar-fixed-bottom">
       <div class="container">
-        <p class="text-muted"> <span> Molly Maher | Ever curious, ever exploring. Contact mollymaher@gmail.com.</span> &copy; 2016 Molly Maher </p>
+        <p class="text-muted"> <span> Molly Maher | Ever curious, ever exploring.  </span> &copy; 2016 Molly Maher </p>
       </div>
     </footer>
   </div>
